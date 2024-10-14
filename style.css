@@ -4,7 +4,7 @@ html {
 
 body {
     background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2,0,36,1) 40%, rgba(9,9,121,1) 50%, #00ff91 70%, rgba(9,92,121,1) 80%, rgba(2,0,36,1) 90%);
+    background: radial-gradient(circle, #020024 40%, #090979 50%, #00ff91 70%, #095c79 80%, #020024 90%);
     background-repeat: no-repeat;
     background-position: center;
     font-size: 18px;
@@ -58,23 +58,31 @@ body {
     height: 30px;
 }
 
-
-
-.main-section_button {
+.main-section_output {
     display: flex;
-    height: auto;
     align-items: center;
-    justify-content: center;
-    margin-top: 30px;
+    margin-top: 50px;
+}
+
+.main-section__output {
+    height: 50px;
+    width: 335px;
+    padding: 0 0 0 15px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    background-color: #e9fff6;
 }
 
 button {
+    background-color: #1c1c99;
+    color: #d9ffef;
     border: none;
-    border-radius: 5px;
-    width: 230px;
-    height: 40px;
+    border-radius: 0 10px 10px 0;
+    height: 50px;
+    width: 170px;
+    padding: 0;
+    cursor: pointer;
 }
-
 
 .footer {
     display: flex;
