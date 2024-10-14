@@ -27,11 +27,15 @@ body {
     text-align: center;
 }
 
-.main-section {
+.main-section_length {
     display: flex;
+    width: 500px;
+    justify-content: space-between;
 }
 
-
+#range__length {
+    width: 350px;
+}
 
 .footer {
     display: flex;

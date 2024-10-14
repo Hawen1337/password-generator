@@ -15,35 +15,36 @@
         <h1 class="header__text">Генератор паролей</h1>
     </header>
     <main class="main">
-        <div class="main-section">
+        <div class="main-section main-section_length">
             <p class="main-section__text">Длина:</p>
-            <input type="range" name="range__length" id="main-section__input" min="6" max="20" step="1" value="8">
+            <input type="range" name="range__length" id="range__length" min="6" max="20" step="1" value="8">
             <p class="main-section__range-value">8</p>
         </div>
-        <div class="main-section">
+        <div class="main-section main-section_case">
             <p class="main-section__text">Регистр:</p>
-            <input type="radio" name="register" id="radio__mixed" checked>
-            <label for="radio__mixed">Смешанный</label>
-            <input type="radio" name="register" id="radio__lowercase">
-            <label for="radio__lowercase">Строчный</label>
-            <input type="radio" name="register" id="radio__uppercase">
-            <label for="radio__uppercase">Заглавный</label>
+                <input type="radio" name="case" id="radio__mixed" checked>
+                <label for="radio__mixed">Смешанный</label>
+                <input type="radio" name="case" id="radio__lowercase">
+                <label for="radio__lowercase">Строчный</label>
+                <input type="radio" name="case" id="radio__uppercase">
+                <label for="radio__uppercase">Заглавный</label>
         </div>
-        <div class="main-section">
+        <div class="main-section main-section_numbers">
             <input type="checkbox" name="numbers" id="checkbox__numbers">
             <label for="checkbox__numbers">Использовать цифры</label>
         </div>
-        <div class="main-section">
+        <div class="main-section main-section_symbols">
             <input type="checkbox" name="symbols" id="checkbox__symbols">
             <label for="checkbox__symbols">Использовать специальные символы</label>
         </div>
-        <div class="main-section">
+        <div class="main-section main-section_button">
             <button id="button">Сгенерировать</button>
         </div>
-        <div class="main-section"></div>
+        <div class="main-section main-section_output"></div>
     </main>
     <footer class="footer">
         <p class="footer__text">Designed & coded by Hawen</p>
+        <a href="https://github"></a>
     </footer>
 </body>
 </html>
