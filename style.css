@@ -60,11 +60,20 @@ body {
 
 
 
-#button {
-    
+.main-section_button {
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
 }
 
-
+button {
+    border: none;
+    border-radius: 5px;
+    width: 230px;
+    height: 40px;
+}
 
 
 .footer {
