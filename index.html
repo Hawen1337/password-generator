@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Генератор паролей</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <head class="head">
+        <h1 class="head__text">Генератор паролей</h1>
+    </head>
+    <main class="main">
+        <div class="main-section">
+            <p class="main-section__text">Длина:</p>
+            <input type="range" id="main-section__input">
+        </div>
+        <div class="main-section">
+            <p class="main-section__text">Регистр:</p>
+            <input type="radio" name="register" id="radio__mixed">
+            <label for="radio__mixed">Смешанный</label>
+            <input type="radio" name="register" id="radio__lowercase">
+            <label for="radio__lowercase">Строчный</label>
+            <input type="radio" name="register" id="radio__uppercase">
+            <label for="radio__uppercase">Заглавный</label>
+        </div>
+        <div class="main-section">
+            <input type="checkbox" name="numbers" id="checkbox__numbers">
+            <label for="checkbox__numbers">Использовать цифры</label>
+        </div>
+        <div class="main-section">
+            <input type="checkbox" name="symbols" id="checkbox__symbols">
+            <label for="checkbox__symbols">Использовать специальные символы</label>
+        </div>
+        <div class="main-section">
+            <button id="button">Сгенерировать</button>
+        </div>
+        <div class="main-section"></div>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">Designed & coded by Hawen</p>
+    </footer>
 </body>
 </html>
