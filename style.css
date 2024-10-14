@@ -1,0 +1,43 @@
+html {
+    height: 100vh;
+}
+
+body {
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 40%, rgba(9,9,121,1) 50%, #00ff91 70%, rgba(9,92,121,1) 80%, rgba(2,0,36,1) 90%);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Montserrat, sans-serif;
+    color: #d9ffef;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header, .footer {
+    flex: 1;
+}
+
+.header {
+    font-size: 28px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.main-section {
+    display: flex;
+}
+
+
+
+.footer {
+    display: flex;
+    align-items: end;
+}
+
+input[type='radio'], input[type='range'], input[type='checkbox'] {
+    accent-color: #00ff91;
+}
