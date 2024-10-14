@@ -7,6 +7,7 @@ body {
     background: radial-gradient(circle, rgba(2,0,36,1) 40%, rgba(9,9,121,1) 50%, #00ff91 70%, rgba(9,92,121,1) 80%, rgba(2,0,36,1) 90%);
     background-repeat: no-repeat;
     background-position: center;
+    font-size: 18px;
     font-family: Montserrat, sans-serif;
     color: #d9ffef;
     font-weight: 400;
@@ -15,6 +16,7 @@ body {
     height: inherit;
     justify-content: space-between;
     align-items: center;
+    user-select: none;
 }
 
 .header, .footer {
@@ -27,15 +29,43 @@ body {
     text-align: center;
 }
 
+.main-section {
+    height: 50px;
+}
+
 .main-section_length {
     display: flex;
-    width: 500px;
+    width: 520px;
     justify-content: space-between;
+    align-items: center;
 }
 
 #range__length {
     width: 350px;
 }
+
+.main-section_case {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#radio__uppercase, #radio__lowercase {
+    margin-left: 17px;
+}
+
+.main-section_numbers, .main-section_symbols {
+    height: 30px;
+}
+
+
+
+#button {
+    
+}
+
+
+
 
 .footer {
     display: flex;
@@ -44,4 +74,9 @@ body {
 
 input[type='radio'], input[type='range'], input[type='checkbox'] {
     accent-color: #00ff91;
+}
+
+a, a:visited {
+    text-decoration: underline;
+    color: #d9ffef;
 }

@@ -17,24 +17,26 @@
     <main class="main">
         <div class="main-section main-section_length">
             <p class="main-section__text">Длина:</p>
-            <input type="range" name="range__length" id="range__length" min="6" max="20" step="1" value="8">
+            <input type="range" name="range__length" id="range__length" min="4" max="20" step="1" value="8">
             <p class="main-section__range-value">8</p>
         </div>
         <div class="main-section main-section_case">
             <p class="main-section__text">Регистр:</p>
+            <div class="main-section-list">
                 <input type="radio" name="case" id="radio__mixed" checked>
                 <label for="radio__mixed">Смешанный</label>
                 <input type="radio" name="case" id="radio__lowercase">
                 <label for="radio__lowercase">Строчный</label>
                 <input type="radio" name="case" id="radio__uppercase">
                 <label for="radio__uppercase">Заглавный</label>
+            </div>
         </div>
         <div class="main-section main-section_numbers">
-            <input type="checkbox" name="numbers" id="checkbox__numbers">
+            <input type="checkbox" name="numbers" id="checkbox__numbers" checked>
             <label for="checkbox__numbers">Использовать цифры</label>
         </div>
         <div class="main-section main-section_symbols">
-            <input type="checkbox" name="symbols" id="checkbox__symbols">
+            <input type="checkbox" name="symbols" id="checkbox__symbols" checked>
             <label for="checkbox__symbols">Использовать специальные символы</label>
         </div>
         <div class="main-section main-section_button">
@@ -43,8 +45,7 @@
         <div class="main-section main-section_output"></div>
     </main>
     <footer class="footer">
-        <p class="footer__text">Designed & coded by Hawen</p>
-        <a href="https://github"></a>
+        <p class="footer__text">Designed & coded by <a href="https://github.com/Hawen1337">Hawen</a></p>
     </footer>
 </body>
 </html>
