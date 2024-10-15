@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="adaptive.css">
 </head>
 <body>
     <header class="header">
@@ -23,13 +24,23 @@
         <div class="main-section main-section_case">
             <p class="main-section__text">Регистр:</p>
             <div class="main-section-list">
-                <input type="radio" name="case" id="radio__mixed" checked>
-                <label for="radio__mixed">Смешанный</label>
-                <input type="radio" name="case" id="radio__lowercase">
-                <label for="radio__lowercase">Строчный</label>
-                <input type="radio" name="case" id="radio__uppercase">
-                <label for="radio__uppercase">Заглавный</label>
+                <div class="main-section-list-item">
+                    <input type="radio" name="case" id="radio__mixed" checked>
+                    <label for="radio__mixed">Смешанный</label>
+                </div>
+                <div class="main-section-list-item">
+                    <input type="radio" name="case" id="radio__lowercase">
+                    <label for="radio__lowercase">Строчный</label>
+                </div>
+                <div class="main-section-list-item">
+                    <input type="radio" name="case" id="radio__uppercase">
+                    <label for="radio__uppercase">Заглавный</label>
+                </div>
             </div>
+        </div>
+        <div class="main-section main-section_letters">
+            <input type="checkbox" name="letters" id="checkbox__letters" checked>
+            <label for="checkbox__letters">Использовать буквы</label>
         </div>
         <div class="main-section main-section_numbers">
             <input type="checkbox" name="numbers" id="checkbox__numbers" checked>
@@ -40,7 +51,7 @@
             <label for="checkbox__symbols">Использовать специальные символы</label>
         </div>
         <div class="main-section main-section_output">
-            <input id="output" class="main-section__output" placeholder="Тут будет ваш новый пароль" disabled>
+            <input id="output" class="main-section__output" placeholder="Тут будет ваш новый пароль" >
             <button id="button">Сгенерировать</button>
         </div>
     </main>
