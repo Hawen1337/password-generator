@@ -18,28 +18,28 @@
     <main class="main">
         <div class="main-section main-section_length">
             <p class="main-section__text">Длина:</p>
-            <input type="range" name="range__length" id="range__length" min="4" max="20" step="1" value="8">
-            <p class="main-section__range-value">8</p>
+            <input type="range" name="range__length" id="range__length" min="4" max="20" step="1" value="8" onchange="changeRangeValue()">
+            <p class="main-section__range-value" id="range__value">8</p>
         </div>
         <div class="main-section main-section_case">
             <p class="main-section__text">Регистр:</p>
             <div class="main-section-list">
                 <div class="main-section-list-item">
-                    <input type="radio" name="case" id="radio__mixed" checked>
+                    <input type="radio" name="case" value="mixed" id="radio__mixed" checked>
                     <label for="radio__mixed">Смешанный</label>
                 </div>
                 <div class="main-section-list-item">
-                    <input type="radio" name="case" id="radio__lowercase">
+                    <input type="radio" name="case" value="lowercase" id="radio__lowercase">
                     <label for="radio__lowercase">Строчный</label>
                 </div>
                 <div class="main-section-list-item">
-                    <input type="radio" name="case" id="radio__uppercase">
+                    <input type="radio" name="case" value="uppercase" id="radio__uppercase">
                     <label for="radio__uppercase">Заглавный</label>
                 </div>
             </div>
         </div>
         <div class="main-section main-section_letters">
-            <input type="checkbox" name="letters" id="checkbox__letters" checked>
+            <input type="checkbox" name="letters" id="checkbox__letters" checked onchange="switchCaseDisplay()">
             <label for="checkbox__letters">Использовать буквы</label>
         </div>
         <div class="main-section main-section_numbers">
@@ -52,11 +52,12 @@
         </div>
         <div class="main-section main-section_output">
             <input id="output" class="main-section__output" placeholder="Тут будет ваш новый пароль" disabled>
-            <button id="button">Сгенерировать</button>
+            <button id="button" onclick="generatePassword()">Сгенерировать</button>
         </div>
     </main>
     <footer class="footer">
         <p class="footer__text">Designed & coded by <a href="https://github.com/Hawen1337">Hawen</a></p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
