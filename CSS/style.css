@@ -72,6 +72,7 @@ body {
     display: flex;
     align-items: center;
     margin-top: 50px;
+    position: relative;
 }
 
 .main-section__output {
@@ -81,6 +82,7 @@ body {
     border: none;
     border-radius: 10px 0 0 10px;
     background-color: #e9fff6;
+    text-align: center;
 }
 
 button {
@@ -100,8 +102,9 @@ button:hover {
     transition: ease-out 0.2s;
 }
 
-button:active {
-    background-color: #00c06d;
+.main-section__output_active {
+    background-color: #00ff91;
+    color: #090979;
 }
 
 .footer {
@@ -115,5 +118,10 @@ input[type='radio'], input[type='range'], input[type='checkbox'] {
 
 a, a:visited {
     text-decoration: underline;
+    color: #d9ffef;
+}
+
+input::selection {
+    background-color: #1c1c99;
     color: #d9ffef;
 }

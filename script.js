@@ -26,7 +26,18 @@ function switchCaseDisplay() {
     }
 }
 
+function showActiveButton() {
+    document.getElementById("button").classList.add("main-section__output_active");
+    document.getElementById("button").innerHTML = "Скопировано!"
+    setTimeout(function() {
+        document.getElementById("button").classList.remove("main-section__output_active");
+        document.getElementById("button").innerHTML = "Сгенерировать";
+    }, 1000);
+}
+
 function generatePassword() {
+    showActiveButton()
+
     const passwordSpecs = new PasswordSpecs;
 
     let len = passwordSpecs.passwordLength;
@@ -71,7 +82,9 @@ function generatePassword() {
         password += chars.charAt(randomIndex);
     }
 
-    document.getElementById("output").value = password
+    document.getElementById("output").value = password;
+
+    navigator.clipboard.writeText(password);
 }
 
 if (!window.crypto && !window.crypto.getRandomValues) {
