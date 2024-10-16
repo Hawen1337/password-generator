@@ -95,16 +95,17 @@ button {
     width: 170px;
     padding: 0;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 button:hover {
-    background-color: #2c2caf;
     transition: ease-out 0.2s;
 }
 
 .main-section__button_active {
     background-color: #00ff91;
     color: #090979;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .footer {
