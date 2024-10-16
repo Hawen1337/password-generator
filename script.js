@@ -27,10 +27,10 @@ function switchCaseDisplay() {
 }
 
 function showActiveButton() {
-    document.getElementById("button").classList.add("main-section__output_active");
+    document.getElementById("button").classList.add("main-section__button_active");
     document.getElementById("button").innerHTML = "Скопировано!"
     setTimeout(function() {
-        document.getElementById("button").classList.remove("main-section__output_active");
+        document.getElementById("button").classList.remove("main-section__button_active");
         document.getElementById("button").innerHTML = "Сгенерировать";
     }, 1000);
 }

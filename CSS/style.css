@@ -102,7 +102,7 @@ button:hover {
     transition: ease-out 0.2s;
 }
 
-.main-section__output_active {
+.main-section__button_active {
     background-color: #00ff91;
     color: #090979;
 }
